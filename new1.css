@@ -1,0 +1,105 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  background: black;
+  font-family: monospace;
+  color: #ff4eb8;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#countdown {
+  z-index: 10;
+}
+
+.hidden {
+  display: none;
+}
+
+#question-box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+  background: transparent;
+  color: #ff4eb8;
+  font-family: monospace;
+  font-size: 24px;
+  white-space: nowrap;
+  text-align: center;
+}
+
+#question-box #question-text {
+  margin-bottom: 15px;
+}
+
+#message {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #ff4eb8;
+  font-family: monospace;
+  font-size: 22px;
+  min-height: 28px;
+
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  white-space: pre-wrap; /* Giữ xuống dòng */
+  text-align: center;    /* Căn giữa */
+  word-break: break-word;
+
+  text-shadow: 
+    0 0 5px #ff4eb8,
+    0 0 10px #ff4eb8,
+    0 0 20px #ff4eb8,
+    0 0 30px #ff4eb8;
+}
+
+#question-box button {
+  font-family: monospace;
+  font-size: 20px;
+  color: #00bfff;
+  background: transparent;
+  border: none;
+  margin: 0 15px;
+  cursor: pointer;
+  text-shadow:
+    0 0 5px #00bfff,
+    0 0 10px #00bfff,
+    0 0 20px #ff4eb8,
+    0 0 30px #ff4eb8;
+  transition: color 0.3s ease;
+}
+
+#question-box button:hover {
+  color: #ff4eb8;
+  text-shadow:
+    0 0 10px #ff4eb8,
+    0 0 20px #ff4eb8,
+    0 0 30px #00bfff;
+}
+
+/* CHỈNH LẠI NÚT "Cảm ơn anh" NẰM DƯỚI ĐOẠN VĂN, CĂN GIỮA */
+#thankBtn {
+  position: relative; /* đổi từ absolute sang relative */
+  display: inline-block;
+  margin: 20px auto 0 auto; /* cách đoạn văn 20px, căn giữa */
+  padding: 8px 20px;
+  cursor: pointer;
+  color: #00bfff;
+  background: transparent;
+  border: none;
+  text-shadow:
+    0 0 5px #00bfff,
+    0 0 10px #00bfff,
+    0 0 20px #ff4eb8,
+    0 0 30px #ff4eb8;
+  transition: color 0.3s ease;
+}
