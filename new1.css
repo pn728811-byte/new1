@@ -103,3 +103,28 @@ canvas {
     0 0 30px #ff4eb8;
   transition: color 0.3s ease;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (orientation: portrait) {
+  body {
+    display: none;
+  }
+  body::before {
+    content: "Hãy xoay ngang màn hình để tiếp tục!";
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 50px;
+  }
+}

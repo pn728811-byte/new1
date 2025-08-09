@@ -237,3 +237,15 @@ document.getElementById('thankBtn').addEventListener('click', () => {
   questionBox.appendChild(thankMessage);
   questionBox.classList.remove('hidden');
 });
+
+
+
+
+
+
+
+if (screen.orientation && screen.orientation.lock) {
+  screen.orientation.lock("landscape").catch(function(error) {
+    console.log("Không thể khóa màn hình:", error);
+  });
+}
