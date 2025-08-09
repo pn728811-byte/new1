@@ -128,3 +128,53 @@ canvas {
     margin-top: 50px;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Giúp web hiển thị tốt trên mọi thiết bị */
+html {
+  font-size: 16px; /* Kích thước chữ mặc định */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+  overflow-x: hidden; /* Ngăn kéo ngang */
+}
+
+/* Khi màn hình nhỏ hơn 768px (điện thoại) */
+@media (max-width: 768px) {
+  html {
+    font-size: 14px; /* Chữ nhỏ hơn một chút */
+  }
+  body {
+    padding: 10px;
+  }
+}
